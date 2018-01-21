@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <script src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>File Metadata Microservice</title>
+
+</head>
+
+<body class="text-center">
+  <div class="container">
+    <br>
+    <div class="jumbotron">
+      <h1>File Metadata Microservice</h1>
+      <br>
+      <p>
+        <strong>User Stories:</strong>
+      </p>
+      <p>1. I can submit a form object that includes a file upload.</p>
+
+      <p>2. The from file input field has the "name" attribute set to "upfile". We rely on this in testing.</p>
+      <p>3. When I submit something, I will receive the file name, and size in bytes within the JSON response.
+      </p>
+      <p>
+        <strong>Usage:</strong>
+      </p>
+      <p>Please upload a file:</p>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <form enctype="multipart/form-data" action="api/fileanalyse" method="POST">
+            <div class="input-group">
+              <input type="file" class="form-control" name="upfile">
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-primary">Upload</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <br>
+      <br>
+      <h4>Built with Node &amp; Express</h4>
+      <footer>
+        <div>a freeCodeCamp
+          <i class="fab fa-free-code-camp"></i> Project</div>
+      </footer>
+
+    </div>
+
+  </div>
+</body>
+
+</html>
